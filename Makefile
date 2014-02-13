@@ -1,4 +1,13 @@
-all: zhtta
+PROGRAM_NAME = zhtta
 
-zhtta: 
-	rustc zhtta.rs
+all: $(PROGRAM_NAME)
+
+$(PROGRAM_NAME): $(PROGRAM_NAME).rs gash.rs
+	rustc $(PROGRAM_NAME).rs
+
+clean :
+	$(RM) $(PROGRAM_NAME)
+    
+run: ${PROGRAM_NAME}
+	./${PROGRAM_NAME}
+
