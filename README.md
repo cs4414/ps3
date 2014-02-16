@@ -10,4 +10,7 @@ Includes:
 - gash.rs: reference solution for PS2, that you can use for your
   embedded shell (but feel free to use your own gash if you prefer).
 
+- zhtta-test.txt: list of test URLs
+
 - www/index.shtml: a simple test file
+
